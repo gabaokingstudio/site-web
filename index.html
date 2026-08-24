@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Référencement SEO principal -->
+    <title>GABAO KING STUDIO | Studio de Développement de Jeux Vidéo</title>
+    <meta name="description" content="Découvrez GABAO KING STUDIO, studio de création de jeux vidéo indépendants. Explorez nos jeux comme Gabon Quest et GABARENA, inspirés par des univers épiques.">
+    <meta name="keywords" content="GABAO KING STUDIO, Gabon Quest, GABARENA, jeu vidéo indépendant, game dev, studio jeux vidéo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gabaokingstudio.github.io/site-web/">
+
+    <!-- Open Graph (Aperçu réseaux sociaux : WhatsApp, Facebook, LinkedIn, Discord) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabaokingstudio.github.io/site-web/">
+    <meta property="og:title" content="GABAO KING STUDIO | L'aventure commence ici">
+    <meta property="og:description" content="Découvrez des univers épiques et des aventures de jeux vidéo uniques développés par GABAO KING STUDIO.">
+    <meta property="og:image" content="https://gabaokingstudio.github.io/site-web/Gabon%20Quest%20logo.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GABAO KING STUDIO | Studio de Jeux Vidéo">
+    <meta name="twitter:description" content="Découvrez nos créations de jeux vidéo uniques et épiques.">
+    <meta name="twitter:image" content="https://gabaokingstudio.github.io/site-web/Gabon%20Quest%20logo.png">
+
+    <!-- Styles et Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Données structurées Schema.org (Google Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GABAO KING STUDIO",
+      "url": "https://gabaokingstudio.github.io/site-web/",
+      "logo": "https://gabaokingstudio.github.io/site-web/Gabon%20Quest%20logo.png",
+      "description": "Studio indépendant de création et de développement de jeux vidéo."
+    }
+    </script>
+</head>
+<body>
+
+    <canvas id="bg-animation"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <strong class="logotype">
+                    <span class="v-green">GA</span><span class="v-yellow">BA</span><span class="v-blue">O</span>
+                    <span class="v-green">K</span><span class="v-yellow">IN</span><span class="v-blue">G</span>
+                    <span class="studio-text"> STUDIO</span>
+                </strong>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#jeux">Nos Jeux</a></li>
+                <li><a href="#propos">À Propos</a></li>
+                <li><a href="#blog">DevLog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="video-container">
+                <video autoplay muted loop playsinline id="hero-video">
+                    <source src="Création_d_une_intro_avec_logo.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            
+            <div class="hero-content">
+                <h1>Créez, Jouez, Dominez.</h1>
+                <p>Découvrez des univers épiques et des aventures inspirées de nos racines.</p>
+                <a href="#jeux" class="btn-main">Explorer nos jeux</a>
+            </div>
+        </section>
+
+        <section id="jeux" class="games-gallery">
+            <h2>Nos Créations</h2>
+            <div class="game-grid">
+                <article class="game-card">
+                    <img src="Gabon Quest logo.png" alt="Affiche et logo du jeu Gabon Quest par GABAO KING STUDIO" loading="lazy">
+                    <h3>Gabon Quest</h3>
+                    <p>Affrontez les explorateurs et récupérez les masques ancestraux.</p>
+                    <a href="#" class="btn-secondary">Voir plus</a>
+                </article>
+
+                <article class="game-card">
+                    <img src="GABARENA logo.png" alt="Affiche du jeu de combat GABARENA" loading="lazy">
+                    <h3>GABARENA</h3>
+                    <p>Des combats épiques à travers les paysages gabonais.</p>
+                    <a href="#" class="btn-secondary">En développement</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="propos" class="about">
+            <h2>L'esprit du Studio</h2>
+            <p>GABAO KING STUDIO est né de la passion pour le développement et la volonté de créer une communauté forte autour du gaming.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 GABAO KING STUDIO. Tous droits réservés.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Rejoindre notre Discord">Discord</a>
+                <a href="#" aria-label="Suivre notre compte TikTok">TikTok</a>
+                <a href="#" aria-label="S'abonner à notre chaîne YouTube">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
