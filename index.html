@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO -->
+    <!-- Référencement SEO principal -->
     <title>GABAO KING STUDIO | Studio de Développement de Jeux Vidéo</title>
-    <meta name="description" content="Découvrez GABAO KING STUDIO, studio de création de jeux vidéo indépendants. Explorez nos jeux comme Gabon Quest et GABARENA.">
-    <meta name="keywords" content="GABAO KING STUDIO, Gabon Quest, GABARENA, jeu vidéo indépendant, game dev">
+    <meta name="description" content="Découvrez GABAO KING STUDIO, studio de création de jeux vidéo indépendants. Explorez nos jeux comme Gabon Quest, GABARENA et L'Héritage D'Akanda.">
+    <meta name="keywords" content="GABAO KING STUDIO, Gabon Quest, GABARENA, L'Héritage D'Akanda, jeu vidéo indépendant, game dev, studio jeux vidéo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gabaokingstudio.github.io/site-web/">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Aperçu réseaux sociaux) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gabaokingstudio.github.io/site-web/">
     <meta property="og:title" content="GABAO KING STUDIO | L'aventure commence ici">
-    <meta property="og:description" content="Découvrez des univers épiques et des aventures uniques développées par GABAO KING STUDIO.">
+    <meta property="og:description" content="Découvrez des univers épiques et des aventures de jeux vidéo uniques développés par GABAO KING STUDIO.">
     <meta property="og:image" content="https://gabaokingstudio.github.io/site-web/Gabon%20Quest%20logo.png">
 
-    <!-- Styles & Fonts -->
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GABAO KING STUDIO | Studio de Jeux Vidéo">
+    <meta name="twitter:description" content="Découvrez nos créations de jeux vidéo uniques et épiques.">
+    <meta name="twitter:image" content="https://gabaokingstudio.github.io/site-web/Gabon%20Quest%20logo.png">
+
+    <!-- Styles et Fonts -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-    <!-- Schema.org -->
+    <!-- Données structurées Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -39,7 +45,7 @@
     <canvas id="bg-animation"></canvas>
 
     <header>
-        <nav class="nav-container">
+        <nav>
             <div class="logo">
                 <strong class="logotype">
                     <span class="v-green">GA</span><span class="v-yellow">BA</span><span class="v-blue">O</span>
@@ -48,25 +54,24 @@
                 </strong>
             </div>
 
-            <!-- Bouton Burger (visible uniquement sur mobile) -->
+            <!-- Bouton Burger Mobile -->
             <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <!-- Navigation (Ligne sur PC, Panneau latéral sur Mobile) -->
             <ul class="nav-links" id="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#jeux">Nos Jeux</a></li>
                 <li><a href="#propos">À Propos</a></li>
-                <li><a href="#blog">DevLog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Section Hero -->
         <section id="accueil" class="hero">
             <div class="video-container">
                 <video autoplay muted loop playsinline id="hero-video">
@@ -82,43 +87,77 @@
             </div>
         </section>
 
+        <!-- Galerie des Jeux -->
         <section id="jeux" class="games-gallery">
             <h2>Nos Créations</h2>
+            
             <div class="game-grid">
+                <!-- Jeu 1 : Gabon Quest -->
                 <article class="game-card">
-                    <img src="Gabon Quest logo.png" alt="Affiche du jeu Gabon Quest" loading="lazy">
-                    <h3>Gabon Quest</h3>
-                    <p>Affrontez les explorateurs et récupérez les masques ancestraux.</p>
-                    <a href="#" class="btn-secondary">Voir plus</a>
+                    <div class="game-card-image">
+                        <img src="Gabon Quest logo.png" alt="Affiche du jeu Gabon Quest" loading="lazy">
+                    </div>
+                    <div class="game-card-content">
+                        <span class="game-tag">Aventure / Action</span>
+                        <h3>Gabon Quest</h3>
+                        <p>Affrontez les explorateurs et récupérez les masques ancestraux.</p>
+                        <div class="game-card-actions">
+                            <a href="#" class="btn-secondary">Voir plus</a>
+                        </div>
+                    </div>
                 </article>
 
+                <!-- Jeu 2 : GABARENA -->
                 <article class="game-card">
-                    <img src="GABARENA logo.png" alt="Affiche du jeu GABARENA" loading="lazy">
-                    <h3>GABARENA</h3>
-                    <p>Des combats épiques à travers les paysages gabonais.</p>
-                    <a href="#" class="btn-secondary">En développement</a>
+                    <div class="game-card-image">
+                        <img src="GABARENA logo.png" alt="Affiche du jeu GABARENA" loading="lazy">
+                    </div>
+                    <div class="game-card-content">
+                        <span class="game-tag">Combat</span>
+                        <h3>GABARENA</h3>
+                        <p>Des combats épiques à travers les paysages gabonais.</p>
+                        <div class="game-card-actions">
+                            <a href="#" class="btn-secondary">En développement</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Jeu 3 : L'Héritage D'Akanda -->
+                <article class="game-card">
+                    <div class="game-card-image">
+                        <img src="L'Héritage D'akanda logo.png" alt="Logo L'Héritage D'Akanda" loading="lazy">
+                    </div>
+                    <div class="game-card-content">
+                        <span class="game-tag">Jeu Web / Enquête</span>
+                        <h3>L'Héritage D'Akanda</h3>
+                        <p>Incarnez l'inspecteur NDONG de la PJ de Libreville. Plongez au cœur d'enquêtes captivantes et résolvez des affaires criminelles complexes.</p>
+                        <div class="game-card-actions">
+                            <a href="jeux/heritage-akanda/index.html" class="btn-primary">Jouer au jeu</a>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
 
+        <!-- Section À Propos -->
         <section id="propos" class="about">
             <h2>L'esprit du Studio</h2>
             <p>GABAO KING STUDIO est né de la passion pour le développement et la volonté de créer une communauté forte autour du gaming.</p>
         </section>
     </main>
 
-    <footer>
+    <!-- Pied de page -->
+    <footer id="contact">
         <div class="footer-content">
             <p>&copy; 2026 GABAO KING STUDIO. Tous droits réservés.</p>
             <div class="social-icons">
-                <a href="#" aria-label="Discord">Discord</a>
-                <a href="#" aria-label="TikTok">TikTok</a>
-                <a href="#" aria-label="YouTube">YouTube</a>
+                <a href="#" aria-label="Rejoindre notre Discord">Discord</a>
+                <a href="#" aria-label="Suivre notre compte TikTok">TikTok</a>
+                <a href="#" aria-label="S'abonner à notre chaîne YouTube">YouTube</a>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
