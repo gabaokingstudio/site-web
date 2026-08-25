@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Héritage d'Akanda - Enquête Policière</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Musique de fond -->
+  <audio id="bg-music" src="musique.mp3" loop></audio>
+
+  <div id="game-container">
+    <header>
+      <div class="header-top">
+        <h1>📜 L'HÉRITAGE D'AKANDA</h1>
+        <!-- Bouton pour contrôler la musique -->
+        <button id="music-toggle-btn">🎵 Musique : OFF</button>
+      </div>
+      <div id="status-bar">
+        <span class="badge-status">📍 Lieu : <strong id="lieu-display">Musée National</strong></span>
+        <span class="badge-status">🎒 Indices : <strong id="indices-count">0</strong></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Zone d'affichage du portrait du personnage -->
+      <div id="character-container">
+        <img id="character-portrait" src="" alt="Portrait du personnage" style="display: none;">
+      </div>
+
+      <!-- Zone d'affichage du texte / dialogue -->
+      <div id="story-box">
+        <p id="story-text">Chargement de l'enquête...</p>
+      </div>
+
+      <!-- Zone des choix du joueur -->
+      <div id="choices-container" class="choices-grid"></div>
+    </main>
+
+    <!-- Carnet d'indices -->
+    <footer>
+      <h3>🔎 Carnet d'Indices & Preuves</h3>
+      <ul id="inventory-list">
+        <li class="empty">Aucun indice collecté pour l'instant.</li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
